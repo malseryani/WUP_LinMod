@@ -47,11 +47,34 @@ cor(SIMS~ARM,data=data)
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+```{r}
+newdata<-data_frame(ARM=88, GRIP=94)
+```
+
+
+
 #### Predict at target point
+
+
+```{r}
+predict(model.1,newdata,interval="prediction")
+```
 
 
 #### scatterplot with model fit
   
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+```{r}
+basicNN + geom_point() + geom_lm()
+```
+
 
 ## Model 2 SIM~GRIP
 
@@ -77,25 +100,56 @@ summary.lm(model.2)
 
 #### predict model.2 at target point
 
+```{r}
+predict(model.2,newdata,interval="prediction")
+```
+
 #### now add the model fit to our plot for model.2
   
-
+```{r}
+basicNG <- ggplot(data,aes(y=SIMS,x=GRIP))
+```
+```{r}
+basicNG + geom_point() + geom_lm()
+```
 
 ## Model 3 SIM~ARM+GRIP
 
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
 #### predict model.3 at target point
   
+```{r}
+predict(model.3,newdata,interval="prediction")
+```
 
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1,model.3)
+```
+
 ### Model.2 vs Model.3
+
+```{r}
+anova(model.2,model.3)
+```
 
 ## Informally compare Model.1 with model.2
 
+```{r}
+anova(model.1,model.2)
+```
