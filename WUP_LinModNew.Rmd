@@ -39,7 +39,7 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 plot(SIMS~ARM,data=data)
 ```
 
-In this scatterplot we can see that as you move to the right, the SIMS increases. So the more to the right we go, the higher it increases.  
+In this scatterplot we can see that as you move to the right, the SIMS increases. So the more to the right we go, the higher it increases. Therefore, this scatterplot has a positive correlation.
 
 ### Numerical results
 
