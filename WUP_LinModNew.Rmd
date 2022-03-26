@@ -156,6 +156,8 @@ This data gives us the equation in order to predict SIMS. The residual standard 
 predict(model.3,newdata,interval="prediction")
 ```
 
+The prediction at target point for model 3 is 0.149 and the confidence interval is -2.1323 to 2.431. 
+
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
