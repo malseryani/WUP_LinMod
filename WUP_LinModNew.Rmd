@@ -96,12 +96,15 @@ This scatterplot shows the same kind of pattern that the first scatterplot shows
 cor(SIMS~GRIP,data= data)
 ```
 
+
 ### Inferential  (Build model.2)
   
   ```{r}
 model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
+
+Based on the inferential results, the residual standard error is 1.295 and the adjusted R-squared is 0.4053. The smaller the residual standard error is the better the model is and the smaller the adjusted R-squared value is the better the model will be. 
 
 #### predict model.2 at target point
 
@@ -132,6 +135,8 @@ cor(SIMS~ARM+GRIP,data=data)
 model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
+
+The residual standard error and the 
 
 #### predict model.3 at target point
   
