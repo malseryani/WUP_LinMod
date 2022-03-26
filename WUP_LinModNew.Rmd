@@ -55,7 +55,7 @@ The correlation value from this data and scatterplot is 0.6860073
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-According to the inferential results, we can see that the adjusted R-squared value is 0.467 and the residual standard error is 1.226
+We know that the smaller the value for the residual standard error, the better the model will be. And the smaller the adjusted R-squared value, the better the model will be as well. According to the inferential results, we can see that the adjusted R-squared value is 0.467 and the residual standard error is 1.226. 
 
 
 ```{r}
