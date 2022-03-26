@@ -82,7 +82,8 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 basicNN + geom_point() + geom_lm()
 ```
 
-This scatterplot shows the 
+This scatterplot shows the best fit for this scatterplot. We can see that the line is pointing in a positive direction because it has a positive correlation.
+
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
