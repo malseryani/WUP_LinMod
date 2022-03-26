@@ -71,6 +71,7 @@ newdata<-data_frame(ARM=88, GRIP=94)
 predict(model.1,newdata,interval="prediction")
 ```
 
+Based off of predicting the target point, we get a predicted value of 0.7 and we also get a confidence interval from -1.7 to 3.13. This allows us to predict model 1.
 
 #### scatterplot with model fit
   
