@@ -139,6 +139,8 @@ This is the model fit for the scatter plot in model 2. It looks somewhat similar
 cor(SIMS~ARM+GRIP,data=data)
 ```
   
+  The correlation value for model 3 which is a combination of SIMS, ARM, and GRIP is 0.7326545.
+  
 ### Inferential  (Build 2-dimentional model.3)
 
 ```{r}
