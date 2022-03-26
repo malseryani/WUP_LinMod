@@ -55,7 +55,7 @@ The correlation value from this data and scatterplot is 0.6860073
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-We know that the smaller the value for the residual standard error, the better the model will be. And the smaller the adjusted R-squared value, the better the model will be as well. According to the inferential results, we can see that the adjusted R-squared value is 0.467 and the residual standard error is 1.226. 
+We know that the smaller the value for the residual standard error, the better the model will be. And the larger the adjusted R-squared value, the better the model will be as well. According to the inferential results, we can see that the adjusted R-squared value is 0.467 and the residual standard error is 1.226. 
 
 
 ```{r}
@@ -109,7 +109,7 @@ model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
 
-Based on the inferential results, the residual standard error is 1.295 and the adjusted R-squared is 0.4053. We can see that model 1 has a smaller value for the residual standard error and this model has a smaller adjusted R-squared value.
+Based on the inferential results, the residual standard error is 1.295 and the adjusted R-squared is 0.4053. We can see that model 1 has a smaller value for the residual standard error and a larger adjusted R-squared value. Whereas, in this model we have a larger residual standard error value and a smaller adjusted R-squared value.
 
 #### predict model.2 at target point
 
@@ -148,7 +148,7 @@ model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
 
-The residual standard error and the 
+This data gives us the equation in order to predict SIMS. The residual standard error is 1.144 and the adjusted R-squared is 0.5358. Therefore, model 3 is better because the residual standard error values for the other two models are bigger and the adjusted R-squared values for the other two models are lower (we want this value to be larger). Hence, model 3 is a better fit than model 1 and model 2.
 
 #### predict model.3 at target point
   
