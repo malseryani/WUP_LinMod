@@ -109,13 +109,16 @@ model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
 
-Based on the inferential results, the residual standard error is 1.295 and the adjusted R-squared is 0.4053. The smaller the residual standard error is the better the model is and the smaller the adjusted R-squared value is the better the model will be. 
+Based on the inferential results, the residual standard error is 1.295 and the adjusted R-squared is 0.4053. We can see that model 1 has a smaller value for the residual standard error and this model has a smaller adjusted R-squared value.
 
 #### predict model.2 at target point
 
 ```{r}
 predict(model.2,newdata,interval="prediction")
 ```
+
+
+The prediction for model 2 at the target point is -0.536 and the confidence interval is from -3.107 to 2.03.
 
 #### now add the model fit to our plot for model.2
   
@@ -125,6 +128,8 @@ basicNG <- ggplot(data,aes(y=SIMS,x=GRIP))
 ```{r}
 basicNG + geom_point() + geom_lm()
 ```
+
+This is the model fit for the scatter plot in model 2. It looks somewhat similar to model 1.
 
 ## Model 3 SIM~ARM+GRIP
 
