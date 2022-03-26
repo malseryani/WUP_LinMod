@@ -47,6 +47,8 @@ In this scatterplot we can see that as you move to the right, the SIMS increases
 cor(SIMS~ARM,data=data)
 ```
 
+The correlation value from this data and scatterplot is 0.6860073
+
 ### Inferential  (Build model.1)
 
 ```{r}
@@ -96,6 +98,7 @@ This scatterplot shows the same kind of pattern that the first scatterplot shows
 cor(SIMS~GRIP,data= data)
 ```
 
+The correlation value from this scatterplot is 0.6398458
 
 ### Inferential  (Build model.2)
   
