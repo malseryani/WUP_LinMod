@@ -181,3 +181,5 @@ In this data set, model 2 and model 3 are nested. We can see that the errors in 
 ```{r}
 anova(model.1,model.2)
 ```
+
+Finally, we can conclude that the model with the grip and arm is better. We can see that the residual some of squares went down by 25 points. 
