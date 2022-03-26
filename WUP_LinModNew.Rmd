@@ -53,6 +53,8 @@ cor(SIMS~ARM,data=data)
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
+According to the inferential results, we can see that the adjusted R-squared value is 0.467 and the residual standard error is 1.226
+
 
 ```{r}
 newdata<-data_frame(ARM=88, GRIP=94)
@@ -77,7 +79,7 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 basicNN + geom_point() + geom_lm()
 ```
 
-
+This scatterplot shows the 
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
@@ -86,6 +88,7 @@ basicNN + geom_point() + geom_lm()
 plot(SIMS~GRIP,data=data)
 ```
 
+This scatterplot shows the same kind of pattern that the first scatterplot shows. As you move towards the right, the SIMS increases. So it looks like its going uphill and right.
 
 ### Numerical results 
 
