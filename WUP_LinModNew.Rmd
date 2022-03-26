@@ -166,6 +166,8 @@ The prediction at target point for model 3 is 0.149 and the confidence interval 
 anova(model.1,model.3)
 ```
 
+In this data set, we can see that model 1 and model 3 are nested. We can see that when all of the errors were added up they came out to be 217.88 and when they were removed they came out to be 188.43. The errors were reduced by about 30.The p-value is significant because it is a very low value so the results are significant. 
+
 ### Model.2 vs Model.3
 
 ```{r}
